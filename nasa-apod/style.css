@@ -65,8 +65,8 @@
     font-size: 12px;
     font-weight: bold;
 }
-#picture {
-    align-self: center;
+#picture img {
+    align-self: stretch;
     width: 50%;
     height: auto;
     margin-right: 1rem;
@@ -75,6 +75,8 @@
 #explanation {
     letter-spacing: 0px;
     line-height: 20px;
-    font-size: 10px;
+    font-size: 12px;
     background-color: #a7adba;
+    font-weight: bold;
+    color: rgba(0,0,0,.7);
 }
