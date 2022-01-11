@@ -84,3 +84,16 @@
     padding: .5em;
     margin:0;
 }
+
+
+input[type="date"]{
+    background-color: #7986cb;
+    padding: 6px;
+    margin: 1em;
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px
+}
