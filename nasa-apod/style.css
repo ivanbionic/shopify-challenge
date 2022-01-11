@@ -33,20 +33,33 @@
 }
 
 .btn-container {
-    background-color: #a7adba;
+    background-color: #c0c5ce;
     align-self: flex-end;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    border-radius: 50px;
 }
 
-i {
-    background-color: #a7adba;
+.btn-container i {
+    background-color: #c0c5ce;
+    font-size: 1.2em;
+    transition: .3s;
 }
-img {
-    flex-shrink: 0;
+.btn-container:hover i {
+    color: #f50057;
 }
+
+.fas {
+    color: #f50057;
+    transition: .4s;
+}
+
 #date{
     align-self: flex-start;
     font-size: 12px;
