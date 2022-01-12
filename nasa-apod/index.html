@@ -14,7 +14,7 @@
         <h1> Spacestagram</h1>
         <form>
           <label for="date-picker">Pick a date:</label>
-          <input id="date-picker" type="date" placeholder="Select Date" />
+          <input id="date-picker" type="date" min="" max="" />
         </form>
         <section class="picture-explanation-container">
         <img src="" id="picture" alt="astronomy image by NASA" />
@@ -22,7 +22,7 @@
         <p id="explanation"></p>
         <p id="date"></p>
         <small style="display: block;" id="copyright"></small>
-        <div class="btn-container"><i onclick="Toggle()" id="btn" class="far fa-heart"></i></div>
+        <button class="btn-container"><i onclick="Toggle()" id="btn" class="far fa-heart"></i></button>
          <script src="btn.js"></script>
         </section>
       </main>

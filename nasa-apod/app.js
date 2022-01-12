@@ -45,3 +45,5 @@ dateInput.addEventListener('change', (e)=>{
     fetchNASAData();
 })
 
+fetchNASAData().onload;
+
