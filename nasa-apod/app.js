@@ -1,6 +1,6 @@
 const url='https://api.nasa.gov/planetary/apod?api_key=';
 const api_key = config.NASA_API_KEY;
-const dateInput = document.querySelector("#date-picker");
+const dateInput = document.querySelector("input[type='date']");
 const currentDate = new Date().toISOString().slice(0,10);  
 
 let newDate = "&date="+dateInput.value+"&";
@@ -22,8 +22,6 @@ const displayData = data => {
     document.getElementById('picture').src = data.hdurl;
     document.getElementById('explanation').textContent = data.explanation;
     
-
-
     dateInput.max=currentDate;
     dateInput.min="1995-06-16"; 
     
@@ -33,17 +31,13 @@ const displayData = data => {
         copyright.innerHTML=""
     }
 
-
- 
-  }
+}
 
 fetchNASAData()
 
-
-dateInput.addEventListener('change', (e)=>{
+dateInput.addEventListener('input', (e)=>{
     e.preventDefault();
     fetchNASAData();
 })
 
-fetchNASAData().onload;
-
+fetchNASAData().onload
