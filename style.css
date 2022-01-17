@@ -1,0 +1,114 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #c0c5ce;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+.picture-explanation-container {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    box-shadow: 0px 1px 8px rgba(0,0,0,.1);
+    background-color: #a7adba;
+    border-radius: 10px;
+}
+#title, p {
+    background-color: #a7adba;
+}
+
+#title {
+    text-align: left;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    padding: .5em;
+    margin: 4px 0px;
+}
+
+ #copyright {
+    background-color:  #a7adba;
+    text-align: initial;
+    padding: .5em;
+    margin: 4px 0px;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.btn-container {
+    background-color: #c0c5ce;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    border-radius: 50px;
+}
+
+.btn-container i {
+    background-color: #c0c5ce;
+    font-size: 1vw;
+    transition: .3s;
+}
+.btn-container:hover i {
+    color: #f50057;
+}
+
+.fas {
+    color: #f50057;
+    transition: .4s;
+}
+
+#date{
+    align-self: flex-start;
+    font-size: 1vw;
+    font-weight: bold;
+    margin: 0;
+    padding: 1em;
+}
+#picture img {
+    align-self: stretch;
+    width: 50%;
+    height: auto;
+    margin-right: 1rem;
+}
+
+img{
+    background-color:  #a7adba;
+}
+
+#explanation {
+    letter-spacing: 0px;
+    line-height: 20px;
+    font-size: 1vw;
+    background-color: #a7adba;
+    font-weight: bold;
+    color: rgba(0,0,0,.7);
+    text-align: initial;
+    padding: .5em;
+    margin:0;
+}
+
+
+input[type="date"]{
+    background-color: #7986cb;
+    padding: 6px;
+    margin: 1em;
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px
+}
+

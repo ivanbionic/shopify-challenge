@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/50343fc1c7.js" crossorigin="anonymous"></script>
+    <title>NASA Astronomy Picture of the Day</title>
+  </head>
+
+  <body>
+      <main class="container">
+        <h1> Spacestagram</h1>
+        <h3 class="source" style="color: rgba(0,0,0,.5);">Brought to you by NASA's Astronomy Photo of the Day (APOD) API</h3>
+        <form>
+          <label for="date-picker" style="color: rgba(0,0,0,.5); font-weight: bold;">Pick a date:</label>
+          <input id="date-picker" type="date" min="" max="" />
+        </form>
+        <section class="picture-explanation-container">
+        <img src="" id="picture" alt="astronomy image by NASA" />
+        <div id="title"></div>
+        <p id="explanation"></p>
+        <p id="date"></p>
+        <small style="display: block;" id="copyright"></small>
+        <button class="btn-container"><i onclick="Toggle()" id="btn" class="far fa-heart"></i></button>
+         <script src="btn.js"></script>
+        </section>
+      </main>
+      <script type="text/javascript" src="config.js"></script>
+      <script src="app.js"></script>
+  </body>
+
+</html>
